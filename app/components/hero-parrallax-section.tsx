@@ -9,11 +9,13 @@ import thismytime from "../images/thismytime3.png"; // Adjust the path as necess
 import thismytime4 from "../images/thismytime4.png"; // Adjust the path as necessary
 import thismytime5 from "../images/thismytime5.png"; // Adjust the path as necessary
 import thismytime6 from "../images/thismytime6.png"; // Adjust the path as necessary
+import { StaticImageData } from "next/image";
 
 export function HeroParallaxDemo() {
   return <HeroParallax products={products} />;
 }
-export const products = [
+
+export const products: { title: string; link: string; thumbnail: string | StaticImageData; }[] = [
   {
     title: "Fill me",
     link: "",
@@ -22,91 +24,73 @@ export const products = [
   {
     title: "Social Beings",
     link: "",
-    thumbnail:
-    socialbeings,
+    thumbnail: socialbeings,
   },
   {
     title: "263Tickets",
     link: "https://263tickets.co.zw/",
-    thumbnail:
-    tickets,
-  },
-
-  {
-    title: "Fill me",
-    link: "",
-    thumbnail:
-    fillthisspot,
+    thumbnail: tickets,
   },
   {
     title: "Fill me",
     link: "",
-    thumbnail:
-    thismytime,
+    thumbnail: fillthisspot,
   },
   {
     title: "Fill me",
     link: "",
-    thumbnail:
-    fillthisspot,
-  },
-
-  {
-    title: "Fill me",
-    link: "",
-    thumbnail:
-    thismytime4,
+    thumbnail: thismytime,
   },
   {
     title: "Fill me",
     link: "",
-    thumbnail:
-    fillthisspot,
+    thumbnail: fillthisspot,
   },
   {
     title: "Fill me",
     link: "",
-    thumbnail:
-    thismytime5,
+    thumbnail: thismytime4,
   },
   {
     title: "Fill me",
     link: "",
-    thumbnail:
-    fillthisspot,
+    thumbnail: fillthisspot,
   },
   {
     title: "Fill me",
     link: "",
-    thumbnail:
-    thismytime6,
-  },
-
-  {
-    title: "Fill me",
-    link: "",
-    thumbnail:
-    fillthisspot,
+    thumbnail: thismytime5,
   },
   {
     title: "Fill me",
     link: "",
-    thumbnail:
-    fillthisspot,
+    thumbnail: fillthisspot,
   },
   {
     title: "Fill me",
     link: "",
-    thumbnail:
-    fillthisspot,
+    thumbnail: thismytime6,
   },
   {
     title: "Fill me",
     link: "",
-    thumbnail:
-    fillthisspot,
+    thumbnail: fillthisspot,
+  },
+  {
+    title: "Fill me",
+    link: "",
+    thumbnail: fillthisspot,
+  },
+  {
+    title: "Fill me",
+    link: "",
+    thumbnail: fillthisspot,
+  },
+  {
+    title: "Fill me",
+    link: "",
+    thumbnail: fillthisspot,
   },
 ];
 
-
-export default HeroParallaxDemo
+export default HeroParallaxDemo;
