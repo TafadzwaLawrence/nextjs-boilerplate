@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import HeroParallaxDemo from "./components/hero-parrallax-section";
+import MacbookScrollDemo from "./components/macbook";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
         <Navbar/>
         {children}
         <HeroParallaxDemo/>
+        <MacbookScrollDemo/>
       </body>
     </html>
   );
