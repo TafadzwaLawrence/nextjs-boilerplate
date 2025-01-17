@@ -40,4 +40,4 @@ export function AuroraBackgroundDemo() {
   );
 }
 
-export default AuroraBackgroundDemo
+export default AuroraBackgroundDemo   
