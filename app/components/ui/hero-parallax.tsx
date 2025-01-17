@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import {
   motion,
@@ -16,7 +15,7 @@ export const HeroParallax = ({
   products: {
     title: string;
     link: string;
-    thumbnail: string | StaticImageData;
+    thumbnail: string | StaticImageData; // Allow both string and StaticImageData
   }[];
 }) => {
   const firstRow = products.slice(0, 5);
@@ -54,10 +53,11 @@ export const HeroParallax = ({
     useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
     springConfig
   );
+
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[300vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -66,7 +66,6 @@ export const HeroParallax = ({
           rotateZ,
           translateY,
         }}
-        className=""
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
           {firstRow.map((product) => (
@@ -77,7 +76,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-20 space-x-20 ">
+        <motion.div className="flex flex-row mb-20 space-x-20">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -99,6 +98,8 @@ export const HeroParallax = ({
     </div>
   );
 };
+
+// Other components (Header and ProductCard) remain unchanged
 
 export const Header = () => {
   return (
