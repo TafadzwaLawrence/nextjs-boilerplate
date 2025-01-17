@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   motion,
@@ -15,7 +16,7 @@ export const HeroParallax = ({
   products: {
     title: string;
     link: string;
-    thumbnail: string | StaticImageData; // Allow both string and StaticImageData
+    thumbnail: string | StaticImageData; // Allows both string and StaticImageData
   }[];
 }) => {
   const firstRow = products.slice(0, 5);
