@@ -16,7 +16,7 @@ export const HeroParallax = ({
   products: {
     title: string;
     link: string;
-    thumbnail: string;
+    thumbnail: string | StaticImageData;
   }[];
 }) => {
   const firstRow = products.slice(0, 5);
@@ -65,7 +65,6 @@ export const HeroParallax = ({
           rotateX,
           rotateZ,
           translateY,
-          opacity,
         }}
         className=""
       >
