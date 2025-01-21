@@ -32,7 +32,7 @@ function Navbar({ className }: { className?: string }) {
         <MenuItem setActive={setActive} active={active} item="Contact Me">
           <div className="flex flex-col space-y-4 text-sm font-mono">
             <HoveredLink href="/web-dev">LinkedIN</HoveredLink>
-            <HoveredLink href="/resume">Resume</HoveredLink>
+            {/* <HoveredLink href="/resume">Resume</HoveredLink> */}
             <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
             <HoveredLink href="/branding">Branding</HoveredLink>
           </div>
