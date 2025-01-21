@@ -158,3 +158,12 @@ export const ProductCard = ({
     </motion.div>
   );
 };
+
+
+
+
+
+
+
+
+// hero
